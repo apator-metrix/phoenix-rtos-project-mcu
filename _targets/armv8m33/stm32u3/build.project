@@ -55,7 +55,8 @@ export KERNEL_PHADDR
 
 
 b_build_project() {
-	b_log "User applications skipped on STM32U3"
+	b_log "Building user applications"
+	make -C "_user" all install
 }
 
 
